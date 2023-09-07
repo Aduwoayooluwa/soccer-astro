@@ -1,0 +1,25 @@
+---
+
+interface Props {
+    name: string;
+    placeholder: string;
+    handleOnChange?: any;
+    icon?: any
+    type: "text" | "password"
+
+}
+
+const { name, placeholder, type, handleOnChange, icon } = Astro.props
+---
+
+
+<div>
+    <input 
+        class="outline-none text-sm p-3 focus:border-red-500 border-red-300 placeholder:text-sm rounded-full border w-full"
+        type={type} name={name} 
+        placeholder={placeholder}
+        onchange={handleOnChange}
+
+     />
+    <span>{icon}</span>
+</div>

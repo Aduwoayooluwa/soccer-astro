@@ -1,0 +1,58 @@
+---
+import Avatar from "./Avatar.astro"
+import Timer from "../../react-components/game/Timer.tsx"
+const { player1, player2, player1Logo, player2Logo, player1Score, player2Score } = Astro.props 
+---
+
+<style>
+  .score-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+
+  .team {
+    display: flex;
+    align-items: center;
+  }
+
+  .team-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .team-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .score {
+    font-size: 24px;
+  }
+</style>
+
+<main class="absolute top-0 w-full">
+  <header class="score-header">
+    <div class="team">
+      <Avatar nameOfPlayer={player1}/>
+      <span class="team-name">{player1}</span>
+    </div>
+    <div class="score">{player1Score} - {player2Score}</div>
+    <div class="team">
+        <Avatar nameOfPlayer={player2}/>
+      <span class="team-name">{player2}</span>
+    </div>
+  </header>
+
+  <section class="w-full flex justify-center">
+    <div class="bg-[#333] text-white w-fit rounded-b-2xl p-3">
+        <Timer client:load />
+    </div>
+  </section>
+  
+  
+</main>

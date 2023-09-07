@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Button from "../astro-components/ui/Button.astro"
+import Input from '../astro-components/ui/Input.astro';
+import Pitch from '../astro-components/ui/Pitch.astro';
+import ScoreHeader from "../astro-components/ui/ScoreHeader.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<!-- <Input name='title' placeholder='Just me here!' type="text"/>
+	<Button name="Click me!" /> -->
+	
+	<!-- score header -->
+	<ScoreHeader
+		player1="Ayo"
+		player2="Segun"
+		player1Score="5"
+		player2Score="1"
+	/>
+
+	<!-- pitch -->
+	<div class="w-full grid place-items-center h-screen">
+		<Pitch  />
+	</div>
+	
+</Layout>
+

@@ -1,0 +1,93 @@
+---
+import Ball from "../../react-components/game/Ball.tsx";
+import Player from "../elements/Player.astro"
+import Player1Formation from "../elements/team1/Formation.astro"
+import Player2Formation from "../elements/team2/Formation.astro"
+import BallDirection from "../others/BallDirection.astro";
+
+const handleBallPos = () => {
+  console.log("clicked")
+}
+---
+
+<style>
+  .pitch {
+    width: 600px;
+    height: 400px;
+    /* background-color: #00b140; */
+    background-color:  #7eaf34;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url("/pitch.png");
+  }
+
+  .center-circle {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .goal-box {
+    width: 80px;
+    height: 240px;
+    background-color: transparent;
+    border: 2px dashed white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .penalty-box {
+    width: 180px;
+    height: 360px;
+    background-color: transparent;
+    border: 2px dashed white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  .goal {
+    width: 20px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+
+<main>
+  <div class="pitch relative">
+
+    <div class="center-circle"></div>
+    <div class="goal-box" style="left: 0;"></div>
+    <div class="goal-box" style="right: 0;"></div>
+    <div class="penalty-box" style="left: 0;"></div>
+    
+    <div class="penalty-box" style="right: 0;"></div>
+    <div class="goal" style="left: 0;"></div>
+    <div class="goal" style="right: 0;"></div>
+
+    <div class="">
+        <Ball client:load />
+    </div>
+
+    <BallDirection />
+        <Player1Formation />
+        <Player2Formation />
+  </div>
+    
+  </div>
+</main>
+

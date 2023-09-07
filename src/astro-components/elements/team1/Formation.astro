@@ -1,0 +1,40 @@
+---
+import Player from "../../../react-components/game/Player"
+
+const playerBg = "bg-red-800"
+---
+
+<main>
+         <!-- Arrange players on the pitch -->
+         <div class="absolute left-10 top-5" style="">
+            <Player bg={playerBg} client:load className="" />
+        </div>
+        <div class="absolute left-10 my-10 bottom-0 " style="">
+            <Player bg={playerBg} client:load  className="" />
+        </div>
+        <div class="absolute left-10 -top-28" style="">
+            <Player bg={playerBg} client:load className="" />
+        </div>
+        
+        
+        <!-- midfield -->
+    
+        <div class="absolute left-[15rem] -top-10" style="">
+            <Player bg={playerBg} client:load className="" />
+        </div>
+        <div class="absolute left-[15rem] my-10 bottom-16 " style="">
+            <Player bg={playerBg} client:load className="" />
+        </div>
+    
+        <!-- forward -->
+        <div class="absolute right-40 top-5" style="">
+            <Player bg={playerBg} client:load className="" />
+        </div>
+        <div class="absolute right-36 my-10 bottom-0 " style="">
+            <Player bg={playerBg} client:load className="" />
+        </div>
+        <div class="absolute right-36 -top-28" style="">
+            <Player bg={playerBg} client:load className="" />
+        </div>
+    
+</main>

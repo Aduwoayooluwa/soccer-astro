@@ -1,0 +1,21 @@
+---
+interface Props {
+    className: string;
+    bg: string
+
+    
+}
+
+const { className, bg } = Astro.props
+---
+
+
+<div class=` ${className} ${bg} focus:border focus:border-white  w-[40px] h-[40px] select-none relative cursor-grabbing -rotate-90  mt-40 perspective-800 transform rotate-x-2 shadow-lg`>
+    <div class="w-full h-full flex items-center justify-center transform -rotate-x-2">
+      <div class="text-center h-full text-white">
+        <p class="text-[10px] "></p>
+        <p class="text-sm font-bold mt-1">10</p>
+        
+      </div>
+    </div>
+  </div>

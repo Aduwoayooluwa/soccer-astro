@@ -1,0 +1,16 @@
+---
+interface Props {
+    name: string
+    handleButtonClick?: any
+}
+
+const { name, handleButtonClick } = Astro.props
+---
+
+
+<button 
+    class="bg-red-400 w-full text-sm focus:bg-red-500
+        p-3 font-medium rounded-full text-white" 
+    onclick={handleButtonClick}>
+    { name }
+</button>
