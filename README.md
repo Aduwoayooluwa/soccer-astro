@@ -3,7 +3,7 @@ title: Soccer Web Application
 description: A web application that allows you to play soccer online built with Astro
 ---
 
-![Featured Image](https://drive.google.com/file/d/1OApe1uotjhgAuu5lY3MlRl551jratCpD/view?usp=sharing)
+![Featured Image](https://soccer-astro.vercel.app/soccer-astro.png)
 
 # Introduction
 
