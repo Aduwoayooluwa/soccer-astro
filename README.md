@@ -1,54 +1,48 @@
-# Astro Starter Kit: Basics
+---
+title: Soccer Web Application
+description: A web application that allows you to play soccer online built with Astro
+---
 
-```
-npm create astro@latest -- --template basics
-```
+![Featured Image](https://drive.google.com/file/d/1OApe1uotjhgAuu5lY3MlRl551jratCpD/view?usp=sharing)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+# Introduction
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This is a web application that allows you to play soccer online. You can control a player on the field and pass the ball to your teammates. The goal is to score more goals than the other team.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Also, a Soccer manager web application. Set your Team Formation and Play against other teams
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+# Features
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+* Play soccer online with other players
+* Control a player on the field
+* Pass the ball to your teammates
+* Score goals
+* Soccer Manager
+# Getting Started
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+To get started, you will need to create an account. Once you have created an account, you can join a game or create your own game.
 
-Any static assets, like images, can be placed in the `public/` directory.
+# Controls
 
-## 🧞 Commands
+Coming soon
+<!-- The controls for the game are as follows: -->
 
-All commands are run from the root of the project, from a terminal:
+<!-- * **W** - Move up
+* **A** - Move left
+* **S** - Move down
+* **D** - Move right
+* **Spacebar** - Pass the ball -->
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+# Gameplay
 
-## 👀 Want to learn more?
+The gameplay is simple. The goal of the game is to score more goals than the other team. You can score goals by passing the ball to your teammates and then shooting the ball into the goal.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# Timing
+The time limit for each gane is 2 minutes. After two minutes, the game ends. 
+
+
+<!-- # Featured Image
+
+The featured image for the application can be placed in the `assets/images` directory. The image file should be named `featured.jpg`. -->

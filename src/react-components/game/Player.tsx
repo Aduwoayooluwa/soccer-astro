@@ -3,9 +3,10 @@ import React from 'react'
 type Props = {
     className: string
     bg: string
+    number: number
 }
 
-const Player = ({ className, bg }: Props) => {
+const Player = ({ className, bg, number }: Props) => {
   return (
         <>
             <div onMouseDown={() => {
@@ -15,7 +16,7 @@ const Player = ({ className, bg }: Props) => {
                 <div className="w-full h-full flex items-center justify-center transform -rotate-x-2">
                     <div className="text-center h-full text-white">
                     <p className="text-[10px] "></p>
-                    <p className="text-sm font-bold mt-1">10</p>
+                    <p className="text-sm font-bold mt-1">{number}</p>
                     
                     </div>
                 </div>
